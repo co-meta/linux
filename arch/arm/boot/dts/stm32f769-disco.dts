@@ -61,7 +61,7 @@
 	};
 
 	aliases {
-		serial0 = &usart1;
+		serial0 = &usart6;
 	};
 
 	leds {
@@ -144,6 +144,13 @@
 	pinctrl-names = "default";
 	status = "okay";
 };
+
+&usart6 {
+	pinctrl-0 = <&usart6_pins_a>;
+	pinctrl-names = "default";
+	status = "okay";
+};
+
 
 &usbotg_hs {
 	dr_mode = "otg";
